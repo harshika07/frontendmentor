@@ -1,0 +1,17 @@
+.container{
+    width:1300px;
+    height: 716px;
+    background-color: hsl(30, 38%, 92%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.card{
+    width: 541px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+}
+.container, .card{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left:50%;
+}
