@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Code](https://github.com/harshika07/frontendmentor/tree/main/product-card-preview-component)
+- Solution URL: [Frontendmentor](https://www.frontendmentor.io/solutions/product-preview-card-component-MRO9XM4dYJ)
 - Live Site URL: [Product-Preview](https://product-preview-caco.netlify.app)
 
 
