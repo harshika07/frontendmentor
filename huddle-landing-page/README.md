@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/huddle-landing-page-with-single-introductory-section-AceOA8LsO5)
+- Live Site URL: [Add live site URL here](https://github.com/harshika07/frontendmentor/tree/main/huddle-landing-page)
 
 ### Built with
 
