@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body{
+    min-height: 100vh;
+    height: auto;
+    background-color: hsl(257, 40%, 49%);
+    color: #fffeff;
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat:no-repeat;
+    background-size: contain, cover; /*sets the bg img and then sets the height*/ 
+    background-attachment:fixed;
+}
+.logo{
+    height: auto;
+    width: auto;
+    max-height: 40px;
+    max-width: 250px;
+}
+.wrapper{
+    margin: 48px 75px 75px; 
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 92px;
+}
+.intro{
+    color: #ffffff;
+    margin-left: 45px;
+}
+.intro h1{
+    font-family: 'Poppins';
+    font-size: 35px;
+    margin: 40px 0px;
+    font-weight: 600;
+    inline-size: 455px;
+    overflow: hidden;
+}
+.intro p{
+    font-family: 'Open Sans';
+    inline-size: 510px;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.intro button{
+    width: 200px;
+    height: 57px;
+    background-color: #ffffff;
+    color: hsl(257, 40%, 49%);
+    font-size: 18px;
+    border-radius: 40px;
+    border: none;
+    margin-top: 30px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 50px;
+    width: 1300px;
+}
+.fa-brands { 
+    padding: 18px;
+    margin-right: 12px;
+    border: 1px solid #fffeff;
+    border-radius: 50%;
+    font-style: normal;
+    font-size: 18px;
+}
+.fa-brands:first-child{
+    margin-left: 100px;
+}
+.intro button:active{
+    background-color: hsl(300, 69%, 71%);
+    color: #ffffff;
+}
+
+.fa-brands:active{
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+@media screen and (max-width:375px){
+    body{
+        background-image: url(./images/bg-mobile.svg);
+        background-size: 100%;
+        background-attachment: scroll;
+    }
+    .container{
+        margin-top: 54px;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    img{
+        width: 297px
+    }
+    .wrapper{
+        margin: 35px 20px;
+    }
+    .intro{
+        /* width: 288px; */
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .intro h1{
+        margin-top: 60px;
+        margin-bottom: 20px;
+      font-size: 26px;
+      inline-size: 350px;
+      overflow:hidden;
+    }
+    .intro p{
+        font-size: 16px;
+        inline-size: 300px;
+        overflow:hidden;
+        margin-left: 20px;
+    }
+    .socials{
+        width: 100%;
+        justify-content: center;
+    }
+    .fa-brands{
+        font-size: 15px;
+        padding: 10px
+    }
+    .fa-brands:first-child{
+        margin-left: 0px;
+    }
+    .intro button{
+        width: 240px;
+        height: 40px;
+        font-size: 13px;
+    }
+}
