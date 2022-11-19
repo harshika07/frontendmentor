@@ -23,12 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Frontendmentor]()
-- Live Site URL: [Live Link](https://github.com/harshika07/frontendmentor/)
+- Solution URL: [Frontendmentor](https://www.frontendmentor.io/solutions/news-homepage-skCEXWD88L)
+- Live Site URL: [Live Link](https://news-homepage-front.netlify.app/)
 
 ### Built with
 
@@ -39,5 +39,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/harshika07)
+- Frontend Mentor - [@harshika07](https://www.frontendmentor.io/profile/harshika07)
 
