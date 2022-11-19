@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, .more-btn{
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    font-size: 15px;
+}
+.toggle-btn{
+    display: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 164px;
+    background-color: hsl(36, 100%, 99%);
+    height: 70px;
+    align-items: center;
+    width: 100%;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 0 30px;
+}
+.navlist, .item-text h3{
+    color: hsl(240, 100%, 5%);;
+}
+.navbar ul li:last-child{
+    padding-right: 0px;
+}
+.container{
+    background-color: hsl(36, 100%, 99%);
+    display: grid;
+    margin: auto;
+    padding: 12px;
+    grid-template-columns: max-content 1fr 1fr;
+    grid-template-rows: max-content 1fr 1fr;
+    width: 1150px;
+    height: 750px;
+    column-gap: 40px;
+    row-gap: 30px;
+}
+.item1{
+    grid-column: span 2;
+    background-image: url(./images/image-web-3-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 730px;
+}
+.item2{
+    grid-row: span 2;
+    width: 350px;
+    height: 500px;
+    background-color: hsl(240, 100%, 5%);
+    padding: 34px 22px;  
+}
+.item2 h1{
+    color: hsl(35, 77%, 62%);
+}
+.item2 h3{
+    color:hsl(36, 100%, 99%);
+    padding-top: 30px;
+    font-size: 20px;
+}
+.item2 p{
+    color: hsl(233, 8%, 79%);
+    padding-bottom: 28px;
+    border-bottom: 1px solid hsl(233, 8%, 79%);
+    line-height: 1.6;
+    padding-top: 10px;
+}
+.item2 p:last-child{
+    border-bottom: none;
+}
+.item3{
+    width: 292px;    
+}
+.item3 h1{
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 1.1;
+}
+.item4{
+    width: 350px;
+}
+.item4 p{
+    padding-bottom: 32px;
+    font-weight: 400;
+}
+.item4 p, .item-text p{
+    color: hsl(236, 13%, 42%);
+    line-height: 1.6;
+}
+.item5, .item6, .item7{
+    display: flex;
+}
+.item-text{
+    width: 240px;
+    padding-left: 22px;
+}
+.item-text h2{
+    color: hsl(233, 8%, 79%);
+    font-size: 24px;  
+}
+.item-text h3{
+    padding: 12px 0;
+}
+.more-btn{
+    height: 46px;
+    width: 185px;
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: hsl(36, 100%, 99%);
+}
+
+/* ACTIVE STATES */
+.more-btn:hover{
+    background-color: hsl(240, 100%, 5%);
+    cursor: pointer;
+}
+.item-text h3:hover, .navbar ul li:hover{
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
+}
+
+
+@media (max-width:375px){
+    .navbar{
+        padding: 0 12px;
+    }
+    .logo img{
+        height: 30px;
+        width: 50px;
+    }
+    .navbar ul li{
+        display: block;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .navlist{
+        z-index: 1;
+        position: fixed;
+        inset: 0 0 0 30%;
+        padding-top: 150px;
+        background-color: hsl(36, 100%, 99%);
+        transform: translateX(100%);
+        transition: transform 200ms ease-out;
+    }
+    .navlist[data-visible='true']{
+        transform: translateX(0%);
+    }
+    .toggle-btn{
+        display: block;
+        position: absolute;
+        background-image: url(./images/icon-menu.svg);
+        background-repeat: none;
+        width: 2rem;
+        height: 17px;
+        top: 2rem;
+        /* right: -90px; */
+        right: 2rem;
+        z-index: 5;
+        border: none;
+       
+    }
+    .toggle-btn[aria-expanded='true']{
+        background-image: url(./images/icon-menu-close.svg);
+        background-repeat: none;
+        height: 30px;
+        position: fixed;
+        background-color: white;
+    }
+
+    .item1{
+        background-image: url(./images/image-web-3-mobile.jpg);
+        width: auto; 
+        grid-column: span 1;
+    }
+    .item2{
+    grid-row-start: 4;
+    }
+    .item3{
+        width: 320px;
+    }
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        width: auto;
+        height: auto;
+    }
+    .wrapper{
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        overflow: hidden;
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
